@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin:0 35px;
+	padding: 0px;
+	font-size: 15px;
+	font-family: "Microsoft Yahei",serif;
+	vertical-align: bottom;
+	background-color: #1d1d1d;	
+}
+
+li {
+	list-style: none;
+}
+.wrapper {
+	overflow: hidden;
+    background:#2c2c2c;
+}
+nav {
+	overflow: hidden;
+	background: #aeaeae;
+}
+nav h1 {
+	float: left;
+	color: #fff;
+	padding-top: 15px;
+    padding-left: 20px;
+}
+nav ul {
+	float: right;
+	vertical-align: bottom;
+	list-style-type: disc;
+}
+nav li {
+	float: left;
+	padding:20px;
+}
+nav a {
+	float: left;
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+a:hover{
+		font-weight:bold;
+		opacity: 0.4;
+}
+
+.two{
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #999;
+}
+.author{
+	font-size: 12px;
+	color: #777;
+}
+.pic-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+.pic-item{
+    border:1px solid #5e5e5e;
+    width: 200px;
+    height:200px;
+    text-align: center;
+    margin:2em;
+    /*overflow: hidden;*/
+}
+.pic-item p{
+    margin: 10px 0;
+}
+p.text{
+	margin: 0;
+	padding:0;
+	font-size: 15px;
+	text-align:center;
+	/*It's OK, it bottom-line merely conbine with the pic-item's border.*/
+	/*The math is right!*/
+}
+.pic-item img{
+    vertical-align:middle;
+ }
+.content{
+	margin: 0px;
+	padding: 10px;
+	background-color: #f0f0f0;
+
+}
+.first, .second,.third, .fourth, aside{
+	margin: 10px;
+	padding: 25px;
+	border: 1px solid #aeaeae;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #aeaeae;
+	background: #fff;
+}
+
+footer{
+/*	position: absolute;
+	height: 100px;
+	right: 35px;
+	left:35px;
+	padding: 100px
+	color: #fff;
+	text-align: center;*/
+	/*Code viewed above didn't function*/
+	color:#fff;
+    background-color: #333;
+    height:40px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*footer p{
+	color: #fff;
+}*/

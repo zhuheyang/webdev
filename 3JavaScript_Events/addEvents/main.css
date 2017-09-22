@@ -1,0 +1,15 @@
+body{
+	margin:0 auto;
+	padding: 0 20%;
+}
+h1, h4{
+	font-style: bold;
+}
+
+img{
+	width: 200px;
+}
+
+.hide{
+	display: none;
+}

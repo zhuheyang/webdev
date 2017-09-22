@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-relative</title>
+</head>
+<body>
+	<div class="relative1">if you don't add some extra attrs like top, right, bottom or left, it will react like "static".</div>
+	<div class="relative2">if you set the relative attr like mentioned above, other elements will not change its position to refill the left space!</div>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.relative1 {
+			position: relative;
+			border: 1px solid red;
+		}
+		.relative2 {
+			position: relative;
+			top: -10px;
+			left: 20px;
+			background-color: white;
+			width: 500px;
+		}
+	</style>
+	<div class="relative">this elements is relative positioned, if it is static positioned, its absolute positioned elements will skip it, directly position according to the body elements</div>
+	<div class="absolute">this elements is absolute positioned, it will position relatively to its father element</div>
+	<style>
+		.relative {
+			position: relative;
+			width: 600px;
+			height: 400px;
+			border: 1px solid red;
+		}
+		.absolute {
+			position: absolute;
+			top: 120px;
+			right: 0;
+			width: 300px;
+			height: 200px;
+			background-color: #999;
+	}
+	</style>
+	<ul>
+		<li>deeee</li>
+		<li></li>
+	</ul>
+</body>
+</html>

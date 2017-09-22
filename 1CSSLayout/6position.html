@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>positon example try</title>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Taco Menu</a></li>
+			<li><a href="">Draft List</a></li>
+			<li><a href="">Hours</a></li>
+			<li><a href="">Directions</a></li>
+			<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		<section>
+			section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。
+		</section>
+		<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+		<section>注意观察当你调整浏览器窗口时发生了什么。效果很赞！</section>
+		<footer>如果你使用了一个固定定位的页眉或页脚，确保有足够的空间来显示它们！我在 body 上面加了 margin-bottom 。</footer>
+	</div>
+	<style>
+		.container {
+		  position: relative;
+		}
+		nav {
+		  position: absolute;
+		  left: 0px;
+		  width: 200px;
+		  background: yellow;
+
+		}
+		section {
+		  /* position is static by default */
+		  margin-left: 200px;
+		  background: red;
+		}
+		footer {
+		  position: fixed;
+		  bottom: 0;
+		  left: 0;
+		  height: 70px;
+		  background-color: green;
+		  width: 100%;
+		  text-align: center;
+
+		}
+		body {
+		  margin-bottom: 120px;
+		}
+		</style>
+
+	<div class="img">
+		<img src="../div+css/ilta.png" alt="photo of granary mice" >
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+	</div>
+	<div>
+	if这个图片比包含它的元素还高， 而且它是浮动的，于是它就溢出到了容器外面！
+	In this situation, you have two choices, one is to change the size of the img, like I do mentioned below.
+	rather than, you can use "overflow:auto" to clearfix hack!
+	IF YOUR BROWER IS IE6.0, YOU SHOULD TAKE CARE OF IT BY ADDING THE MENTION "zoom: 1;" below the clearfix hack.
+	<p>like:"OVERFLOW: AUTO; ZOOM: 1;"</p>
+	<p>有些独特的浏览器需要“额外的关照”。清除浮动这潭 水很深很深，但是这个简单的解决方案已经可以在今天所有的主要浏览器上工作。</p>
+	</div>
+	<style>
+		.img{
+			background: #999;
+			color:purple;
+			overflow: auto;
+		}
+		.img img{
+			float:right;
+			margin:1em;
+			width: 80px;
+			height: 80px;
+		}
+	</style>
+
+	<div class="container2">
+		<nav class="nav2" style="float: left; width: 200px;">
+			<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Taco Menu</a></li>
+			<li><a href="">Draft List</a></li>
+			<li><a href="">Hours</a></li>
+			<li><a href="">Directions</a></li>
+			<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		<section  style="margin-left: 200px">
+			section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。
+		</section>
+		<section style="margin-left: 200px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+		</nav>
+	</div>
+	<p style="clear:both">watch!</p>
+	<p>这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。原本在这个例子中是不需要的，但是当 nav 比非浮动的内容还要高时就需要了。</p>
+</body>
+</html>

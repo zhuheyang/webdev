@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inline-block layout</title>
+</head>
+<body>
+		<nav>
+			<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Taco Menu</a></li>
+			<li><a href="">Draft List</a></li>
+			<li><a href="">Hours</a></li>
+			<li><a href="">Directions</a></li>
+			<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="column">
+		<section>
+			Tada!
+		</section>
+		<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+		<section>
+			vertical-align 属性会影响到inline-block 元素，你可能会把它的值设置为 top。
+			你需要设置每一列的宽度.如果HTML源代码中元素之间有空格，那么列与列之间会产生空隙
+		</section>
+		</div>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		nav{
+			display: inline-block;
+			vertical-align: top;
+			width: 25%;
+			/*border: 200px yellow solid;*/
+		}
+		.column{
+			display: inline-block;
+			vertical-align: top;
+			width: 74%;
+			/*border: 200px green solid;*/
+		}
+		/*no matter how you configure, once their sum width reach 99.1%,then they will splice into two piece, namely two columns to two rows!*/
+		/*I think there must be some blankspace in html source code that cause this layout! That's it.*/
+		section{
+			padding: 1em;
+			column-count: 3;
+			column-gap: 1em;
+		}
+	</style>
+</body>
+</html>

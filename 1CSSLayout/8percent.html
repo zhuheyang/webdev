@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>percent test</title>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Taco Menu</a></li>
+			<li><a href="">Draft List</a></li>
+			<li><a href="">Hours</a></li>
+			<li><a href="">Directions</a></li>
+			<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		<section>
+			section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。
+		</section>
+		<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+		<section>注意观察当你调整浏览器窗口时发生了什么。效果很赞！</section>
+	</div>
+	<div>
+		你可以用百分比做布局，但是这需要更多的工作。在下面的例子中，当窗口宽度很窄时 nav 的内容会以一种不太友好的方式被包裹起来。总而言之，选一种最合适你的内容的方式。
+	</div>
+	<style>
+		@media screen and (min-width:600px) {
+		  nav {
+		    float: left;
+		    width: 25%;
+		  }
+		  section {
+		    margin-left: 25%;
+		  }
+		}
+		@media screen and (max-width:599px) {
+		  nav li {
+		    display: inline;
+		  }
+}
+	</style>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div+css</title>
+</head>
+<body>
+	<div id="container">  
+      <div id="header">头部</div>
+      <div class="section">
+          <div id="sidebar">侧栏</div> 
+          <div id="content">文本主体</div>
+          <div id="footer">尾部</div> 
+        </div>
+   </div>
+	
+    <style type="text/css"> 
+    body{ 
+        margin: 0px;
+        padding: 0px;  
+    }      
+    div#container{         
+        overflow: auto;/*-------------容器大小自适应 */    
+    }   
+/*    border-width:1px solid red为简写,如下:
+    border-width:1px;
+	border-style:solid; 
+	border-color:red; */
+
+    div#header{   
+        width: 1600px; 
+        margin: 0 auto;     
+        border: 1px solid red;       
+        height:100px;     
+    }
+    .section{
+        position: relative;
+        width: 1600px;
+        margin:0 auto;
+    }       
+    div#sidebar{
+        /*position: absolute;
+        top:0;    
+        left:0;*/
+        width:198px;    
+        height:520px;   
+        border: 1px solid red;/*------------简写   */ 
+        float: left;    
+    }    
+    div#content{ 
+        /*position: absolute;
+        top:0;    
+        left:0;*/  
+        width:1398px;   
+        height:520px;      
+        border: 1px solid green; 
+        float: right;/*-------------浮动    */
+    }    
+    div#footer{  
+        height: 89px;    
+        border: 1px solid yellow;    
+        clear: both;/*--------------清除左右侧浮动 */
+       }
+</style>
+</body>
+</html>
