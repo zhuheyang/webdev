@@ -45,19 +45,14 @@ var server = net.createServer(function (conn) {
         nickname = data;
         users[nickname] = conn;
         
-        for (var i in users) {
-          broadcast('\033[90m > ' + nickname + ' joined the room\033[39m\n');
-        }
+        broadcast('\033[90m > ' + nickname + ' joined the room\033[39m\n');
       }
     } else {
       //否则视为聊天信息
-      //这里使用了 i != nickname 确保消息发送给出了自己以外的其他客户端
-      for (var i in users) {
-        if (i != nickname) {
-          broadcast('\033[96m > ' + nickname + ':\033[39m ' + data + '\n');
-        }
+      //这里将exceptMyself设置为true, 则相对应!exceptMyself为false
+      //则会进行if(i != nickname)的判断条件,不会在自己的服务器中出现自己的聊天信息!
+      broadcast('\033[96m > ' + nickname + ':\033[39m ' + data + '\n', true);
       }
-    }
   });
   
   conn.on('close', function () {

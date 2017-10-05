@@ -1,0 +1,8 @@
+{
+  "name": "http-form",
+  "description": "An HTTP server that processes forms",
+  "authors": "Lin Jhongwun",
+  "version": "0.0.1",
+  "main": "pathToMain",
+  "dependencies": {}
+}

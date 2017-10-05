@@ -1,0 +1,247 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'up' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData up
+8 silly fetchNamedPackageData up
+9 silly mapToRegistry name up
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'up',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'up',
+12 silly mapToRegistry   name: 'up',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/up
+14 verbose request uri https://registry.npmjs.org/up
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 18:49:29
+17 verbose request id a74517972ffc88a1
+18 http request GET https://registry.npmjs.org/up
+19 http 200 https://registry.npmjs.org/up
+20 verbose headers { server: 'nginx/1.10.1',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'last-modified': 'Tue, 29 Aug 2017 01:39:22 GMT',
+20 verbose headers   etag: 'W/"59a4c5ca-2f7c"',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '2543',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Wed, 04 Oct 2017 10:49:30 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-nrt6128-NRT',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1507114171.505589,VS0,VE155',
+20 verbose headers   vary: 'Accept-Encoding, Accept' }
+21 silly get cb [ 200,
+21 silly get   { server: 'nginx/1.10.1',
+21 silly get     'content-type': 'application/json',
+21 silly get     'last-modified': 'Tue, 29 Aug 2017 01:39:22 GMT',
+21 silly get     etag: 'W/"59a4c5ca-2f7c"',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '2543',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Wed, 04 Oct 2017 10:49:30 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-nrt6128-NRT',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1507114171.505589,VS0,VE155',
+21 silly get     vary: 'Accept-Encoding, Accept' } ]
+22 verbose get saving up to /root/.npm/registry.npmjs.org/up/.cache.json
+23 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+24 verbose makeDirectory /root/.npm creation not in flight; initializing
+25 silly makeDirectory /root/.npm uid: 1000 gid: 1000
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule up@1.0.1 checking installable status
+39 silly cache add args [ 'up', null ]
+40 verbose cache add spec up
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'up',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'up',
+41 silly cache add   name: 'up',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed up@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for up
+44 info addNameTag [ 'up', 'latest' ]
+45 silly mapToRegistry name up
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'up',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'up',
+48 silly mapToRegistry   name: 'up',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/up
+50 verbose addNameTag registry:https://registry.npmjs.org/up not in flight; fetching
+51 verbose get https://registry.npmjs.org/up not expired, no request
+52 silly addNameTag next cb for up with tag latest
+53 silly addNamed up@1.0.1
+54 verbose addNamed "1.0.1" is a plain semver version for up
+55 silly mapToRegistry name up
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry data Result {
+58 silly mapToRegistry   raw: 'up',
+58 silly mapToRegistry   scope: null,
+58 silly mapToRegistry   escapedName: 'up',
+58 silly mapToRegistry   name: 'up',
+58 silly mapToRegistry   rawSpec: '',
+58 silly mapToRegistry   spec: 'latest',
+58 silly mapToRegistry   type: 'tag' }
+59 silly mapToRegistry uri https://registry.npmjs.org/up
+60 verbose addRemoteTarball https://registry.npmjs.org/up/-/up-1.0.1.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/up/-/up-1.0.1.tgz',
+61 verbose addRemoteTarball   '31ed3a1c074e3ca1af3ed2337f9905ba6f017073' ]
+62 info retry fetch attempt 1 at 18:49:30
+63 info attempt registry request try #1 at 18:49:30
+64 http fetch GET https://registry.npmjs.org/up/-/up-1.0.1.tgz
+65 http fetch 200 https://registry.npmjs.org/up/-/up-1.0.1.tgz
+66 silly fetchAndShaCheck shasum 31ed3a1c074e3ca1af3ed2337f9905ba6f017073
+67 verbose addTmpTarball /tmp/npm-20522-1d48e6a1/registry.npmjs.org/up/-/up-1.0.1.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for up@1.0.1
+69 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+70 silly cache afterAdd up@1.0.1
+71 verbose afterAdd /root/.npm/up/1.0.1/package/package.json not in flight; writing
+72 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+73 verbose afterAdd /root/.npm/up/1.0.1/package/package.json written
+74 silly loadAllDepsIntoIdealTree Finishing
+75 silly loadIdealTree Finishing
+76 silly currentTree lib
+77 silly idealTree lib
+77 silly idealTree └── up@1.0.1
+78 silly generateActionsToTake Starting
+79 silly install generateActionsToTake
+80 silly generateActionsToTake Finishing
+81 silly diffTrees action count 1
+82 silly diffTrees add up@1.0.1
+83 silly decomposeActions action count 8
+84 silly decomposeActions fetch up@1.0.1
+85 silly decomposeActions extract up@1.0.1
+86 silly decomposeActions test up@1.0.1
+87 silly decomposeActions preinstall up@1.0.1
+88 silly decomposeActions build up@1.0.1
+89 silly decomposeActions install up@1.0.1
+90 silly decomposeActions postinstall up@1.0.1
+91 silly decomposeActions finalize up@1.0.1
+92 silly runTopLevelLifecycles Starting
+93 silly executeActions Starting
+94 silly install executeActions
+95 silly doSerial global-install 0
+96 silly doParallel fetch 1
+97 verbose correctMkdir /root/.npm/_locks correctMkdir not in flight; initializing
+98 verbose makeDirectory /root/.npm/_locks creation not in flight; initializing
+99 silly makeDirectory /root/.npm/_locks uid: 1000 gid: 1000
+100 verbose lock using /root/.npm/_locks/staging-a072192f34a17023.lock for /usr/lib/node_modules/.staging
+101 silly doParallel extract 1
+102 silly extract up@1.0.1
+103 verbose unbuild lib/node_modules/.staging/up-d63082b2
+104 silly gentlyRm /usr/lib/node_modules/.staging/up-d63082b2 is being purged from base /usr
+105 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/up-d63082b2
+106 verbose tar unpack /root/.npm/up/1.0.1/package.tgz
+107 verbose tar unpacking to /usr/lib/node_modules/.staging/up-d63082b2
+108 silly gentlyRm /usr/lib/node_modules/.staging/up-d63082b2 is being purged
+109 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/up-d63082b2
+110 silly gunzTarPerm modes [ '755', '644' ]
+111 silly gunzTarPerm extractEntry package.json
+112 silly gunzTarPerm extractEntry Readme.md
+113 silly gentlyRm /usr/lib/node_modules/.staging/up-d63082b2/node_modules is being purged
+114 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/.staging/up-d63082b2/node_modules
+115 silly doParallel preinstall 1
+116 silly preinstall up@1.0.1 /usr/lib/node_modules/.staging/up-d63082b2
+117 info lifecycle up@1.0.1~preinstall: up@1.0.1
+118 silly lifecycle up@1.0.1~preinstall: no script for preinstall, continuing
+119 silly doReverseSerial remove 0
+120 silly doSerial move 0
+121 silly doSerial finalize 1
+122 silly finalize /usr/lib/node_modules/up
+123 silly doSerial build 1
+124 silly build up@1.0.1
+125 info linkStuff up@1.0.1
+126 silly linkStuff up@1.0.1 has /usr/lib/node_modules as its parent node_modules
+127 silly linkStuff up@1.0.1 is part of a global install
+128 silly linkStuff up@1.0.1 is installed into a global node_modules
+129 silly linkStuff up@1.0.1 is installed into the top-level global node_modules
+130 verbose linkBins up@1.0.1
+131 verbose linkMans up@1.0.1
+132 silly doSerial global-link 0
+133 silly doParallel update-linked 0
+134 silly doSerial install 1
+135 silly install up@1.0.1 /usr/lib/node_modules/.staging/up-d63082b2
+136 info lifecycle up@1.0.1~install: up@1.0.1
+137 silly lifecycle up@1.0.1~install: no script for install, continuing
+138 silly doSerial postinstall 1
+139 silly postinstall up@1.0.1 /usr/lib/node_modules/.staging/up-d63082b2
+140 info lifecycle up@1.0.1~postinstall: up@1.0.1
+141 verbose lifecycle up@1.0.1~postinstall: unsafe-perm in lifecycle false
+142 verbose lifecycle up@1.0.1~postinstall: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/usr/lib/node_modules/up/node_modules/.bin:/usr/lib/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+143 verbose lifecycle up@1.0.1~postinstall: CWD: /usr/lib/node_modules/up
+144 silly lifecycle up@1.0.1~postinstall: Args: [ '-c',
+144 silly lifecycle   'curl -sfL https://raw.githubusercontent.com/apex/up/master/install.sh | sh' ]
+145 silly lifecycle up@1.0.1~postinstall: Returned: code: 1  signal: null
+146 info lifecycle up@1.0.1~postinstall: Failed to exec postinstall script
+147 verbose unlock done using /root/.npm/_locks/staging-a072192f34a17023.lock for /usr/lib/node_modules/.staging
+148 silly rollbackFailedOptional Starting
+149 silly rollbackFailedOptional Finishing
+150 silly runTopLevelLifecycles Finishing
+151 silly install printInstalled
+152 verbose stack Error: up@1.0.1 postinstall: `curl -sfL https://raw.githubusercontent.com/apex/up/master/install.sh | sh`
+152 verbose stack Exit status 1
+152 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+152 verbose stack     at emitTwo (events.js:106:13)
+152 verbose stack     at EventEmitter.emit (events.js:191:7)
+152 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+152 verbose stack     at emitTwo (events.js:106:13)
+152 verbose stack     at ChildProcess.emit (events.js:191:7)
+152 verbose stack     at maybeClose (internal/child_process.js:920:16)
+152 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+153 verbose pkgid up@1.0.1
+154 verbose cwd /home/lin/WorkSpace/webdev/5Node.test/HTTP/TwitterWebClient
+155 error Linux 4.10.0-35-generic
+156 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "up"
+157 error node v6.11.3
+158 error npm  v3.10.10
+159 error code ELIFECYCLE
+160 error up@1.0.1 postinstall: `curl -sfL https://raw.githubusercontent.com/apex/up/master/install.sh | sh`
+160 error Exit status 1
+161 error Failed at the up@1.0.1 postinstall script 'curl -sfL https://raw.githubusercontent.com/apex/up/master/install.sh | sh'.
+161 error Make sure you have the latest version of node.js and npm installed.
+161 error If you do, this is most likely a problem with the up package,
+161 error not with npm itself.
+161 error Tell the author that this fails on your system:
+161 error     curl -sfL https://raw.githubusercontent.com/apex/up/master/install.sh | sh
+161 error You can get information on how to open an issue for this project with:
+161 error     npm bugs up
+161 error Or if that isn't available, you can get their info via:
+161 error     npm owner ls up
+161 error There is likely additional logging output above.
+162 verbose exit [ 1, true ]
